@@ -1,0 +1,95 @@
+*{
+  box-sizing: border-box;
+  font-size:20px;
+  user-select: none;
+}
+
+:root{
+  --color1: red;
+  --color2: green;
+  --color3: blue;
+  --color4: purple;
+  --color5: brown;
+  --color6: yellow;
+  --color7: orange;
+  --color0: black;
+}
+
+ul{
+  list-style-type: none;
+  
+}
+
+ul li{
+  display: inline-block;
+  cursor: pointer;
+  margin: .3rem;
+}
+
+ul li span{
+  text-align: center;
+  display: inline-block;
+  width: 4rem;
+  height: 4rem;
+  border:1px solid black;
+  border-radius: 5rem;
+  padding-top: 1.2rem;
+  font-size: 1.2rem;
+  user-select: none;
+}
+button{
+	padding:10px;
+	border-radius:5px;
+	margin:5px;
+}
+#btn-container{
+	display:grid;
+	grid-template-columns: repeat(5, 1fr);
+}
+
+
+.hidden{
+  visibility: hidden;
+}
+.visible{
+  visibility: visible;
+}
+
+.color-1{
+  background-color: var(--color1); 
+}
+.color-2{
+  background-color: var(--color2); 
+}
+.color-3{
+  background-color: var(--color3); 
+}
+.color-4{
+  background-color: var(--color4); 
+}
+.color-5{
+  background-color: var(--color5); 
+}
+.color-6{
+  background-color: var(--color6); 
+}
+.color-7{
+  background-color: var(--color7); 
+}
+.color-0{
+  background-color: var(--color0); 
+  color: white;
+}
+
+.btn-color-colored{
+ 
+ background: linear-gradient(to bottom, #ff9933 0%, #ffff00 100%);
+}
+
+@media only screen and (max-width: 800px) {
+
+	#btn-container{
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Lucky six </title>
+    <link rel="stylesheet" type="text/css" href="stil.css">
+	<meta content="width=device-width, initial-scale=1" name="viewport" />    
+  </head>
+  <body>
+    <main>
+      <div id="btn-container">
+		  <button id="butoon" onclick="luckySix()">Random</button>
+		  <button id="btn-sort" class="hidden" onclick="sortiraj()">Sortiraj</button>
+		  <button id="btn-add" class="hidden" onclick="addNewNumber()">Dodaj</button>
+		  <button id="btn-remove" class="hidden" onclick="removeNumber()">Obrisi</button>
+		  <button id="btn-color" class="hidden" onclick ="toogleColor()">Boja</button>
+	  </div>
+      <div id="display">
+      </div>
+     
+
+      <section>
+        <h5>Opis:</h5>
+        <p>Random dugme sluzi za generisanje 6 slucajih brojeva od 0 do 48</p>
+        <p>Sortiraj dugme ce generisan niz sortirati po rastucem redosledu</p>
+        <p>Dugmetom boja se moze ukljuciti i iskljuciti boja na brojevima</p>
+        <p>Klikom na svaki pojedinacni broj, isti se moze promeniti</p>
+     
+      </section>
+
+    </main>
+    <script src="luckySix.js"></script>
+  </body>
+</html>
